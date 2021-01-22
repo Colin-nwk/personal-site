@@ -1,0 +1,241 @@
+:root {
+  --box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+  --royal: #361999;
+  --greenish: #78fff1;
+  --redish: #ff6495;
+  --dark: #2a3b47;
+  --text-color: #697477;
+  --header-height: 4.8rem;
+  --font-medium: 500;
+  --body-font: "Monserrat", sans-serif;
+  --big-font-size: 6rem;
+  --h2-font-size: 2rem;
+  --normal-font-size: 1.5rem;
+  --small-font-size: 1.2rem;
+  --z-fixed: 100;
+}
+
+/* 
+0-600px phone
+
+600 - 900px  tablet portrait
+900 - 1200px tablet landscape
+
+[1200 -1800] is where our normal style applies
+
+188px > big screens
+
+order : base > typography > general layout + grid > page layout > components
+
+ breakpoint argument choices
+-phone
+-tab-port
+-tab-land
+-big -desktop
+*/
+.m-1 {
+  margin: 1rem;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.mx-1 {
+  margin: 0 1rem;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.px-1 {
+  padding: 0 1rem;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.mx-2 {
+  margin: 0 2rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.px-2 {
+  padding: 0 2rem;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.my-3 {
+  margin: 3rem 0;
+}
+
+.mx-3 {
+  margin: 0 3rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.px-3 {
+  padding: 0 3rem;
+}
+
+.m-4 {
+  margin: 4rem;
+}
+
+.my-4 {
+  margin: 4rem 0;
+}
+
+.mx-4 {
+  margin: 0 4rem;
+}
+
+.p-4 {
+  padding: 4rem;
+}
+
+.py-4 {
+  padding: 4rem 0;
+}
+
+.px-4 {
+  padding: 0 4rem;
+}
+
+.m-5 {
+  margin: 5rem;
+}
+
+.my-5 {
+  margin: 5rem 0;
+}
+
+.mx-5 {
+  margin: 0 5rem;
+}
+
+.p-5 {
+  padding: 5rem;
+}
+
+.py-5 {
+  padding: 5rem 0;
+}
+
+.px-5 {
+  padding: 0 5rem;
+}
+
+/*
+%flex {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flexDirection($direction) {
+  @extend %flex;
+  flex-direction: $direction;
+  justify-content: flex-start;
+}
+@mixin flexCenter {
+  @extend %flex;
+  justify-content: center;
+}
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width: 56.25em) {
+  :root {
+    --big-font-size: 8.5rem;
+    --h2-font-size: 3.2rem;
+    --normal-font-size: 1.8rem;
+    --small-font-size: 1.4rem;
+  }
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.section-title {
+  position: relative;
+  font-size: var(--h2-font-size);
+  color: var(--dark);
+  margin: 2rem 0;
+}
+
+.section-title::after {
+  position: absolute;
+  content: "";
+  width: 3.2rem;
+  height: 0.2rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 3.2rem;
+  background-color: var(--royal);
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,22 @@
+.section {
+  padding: 4rem 0;
+
+  &-title {
+    position: relative;
+    font-size: var(--h2-font-size);
+    color: var(--dark);
+    margin: 2rem 0;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 3.2rem;
+      height: 0.2rem;
+      left: 0;
+      right: 0;
+      margin: auto;
+      top: 3.2rem;
+      background-color: var(--royal);
+    }
+  }
+}
