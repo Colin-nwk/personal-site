@@ -1,0 +1,16 @@
+.bg-grid {
+  max-width: 120rem;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 3rem;
+  width: calc(100% - 3rem);
+  margin: 1rem 0;
+}
+.l-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background: var(--royal);
+}

@@ -20,7 +20,8 @@ order : base > typography > general layout + grid > page layout > components
 // FIXME:
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
-    @media only screen and (max-width: 37.5em) {
+    // @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 48em) {
       // 600px / 16
       @content;
     }
