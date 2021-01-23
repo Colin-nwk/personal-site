@@ -1,0 +1,46 @@
+.about {
+  &__container {
+    justify-items: center;
+    row-gap: 3.2rem;
+    text-align: center;
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    padding-top: 1.6rem;
+    width: 120px;
+    height: 120px;
+    background-color: var(--royal);
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+      width: 100px;
+    }
+  }
+  &__subtitle {
+    font-size: var(--h2-font-size);
+    color: var(--royal);
+    margin-bottom: 0.8rem;
+  }
+  &__text {
+    margin-bottom: 2rem;
+  }
+  &__profession {
+    display: block;
+    margin-bottom: 2rem;
+  }
+  &__social-icon {
+    font-size: 2rem;
+    margin: 0 1rem;
+    color: var(--royal);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--redish);
+    }
+  }
+}

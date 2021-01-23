@@ -1,0 +1,27 @@
+.skills {
+  &__container {
+    row-gap: 3rem;
+  }
+  &__subtitle {
+    color: var(--royal);
+    margin-bottom: 2rem;
+  }
+  &__name {
+    display: inline-block;
+    font-size: var(--small-font-size);
+    margin-right: 1.2rem;
+    margin-bottom: 2rem;
+    padding: 0.4rem 0.8rem;
+    background-color: var(--white);
+    border-radius: 0.4rem;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: var(--redish);
+      color: var(--white);
+    }
+  }
+  &__img img {
+    border-radius: 0.4rem;
+  }
+}

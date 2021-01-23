@@ -1,12 +1,13 @@
 .section {
-  padding: 4rem 0;
+  padding: 3rem 0;
+  transition: all 0.3s ease-in-out;
 
   &-title {
     position: relative;
     font-size: var(--h2-font-size);
     color: var(--dark);
     margin: 2rem 0;
-
+    text-align: center;
     &::after {
       position: absolute;
       content: "";
@@ -16,11 +17,13 @@
       right: 0;
       margin: auto;
       top: 3.2rem;
-      background-color: var(--royal);
+      background-color: var(--redish);
     }
   }
 }
-
+.active {
+  transition: all 0.3s ease-in-out;
+}
 .active::after {
   position: absolute;
   content: "";
