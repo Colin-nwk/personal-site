@@ -17,6 +17,8 @@
   }
   &__logo {
     color: var(--white);
+    font-size: 5rem;
+    text-shadow: 0 20px 25px rgba(0, 0, 0, 0.5);
   }
   &__toggle {
     color: var(--white);
@@ -44,4 +46,3 @@
 .show {
   right: 0%;
 }
-
