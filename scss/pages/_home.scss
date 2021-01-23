@@ -1,0 +1,40 @@
+.home {
+  position: relative;
+  background-color: var(--royal);
+  overflow: hidden;
+
+  &__container {
+    height: calc(100vh - var(--header-height));
+    row-gap: 6rem;
+    // margin-top: 3rem;
+  }
+
+  &__title {
+    align-self: flex-end;
+    font-size: var(--big-font-size);
+    color: var(--white);
+    line-height: 0.8;
+
+    span {
+      color: var(--redish);
+      text-shadow: 0 20px 25px rgba(0, 0, 0, 0.5);
+    }
+  }
+  &__scroll {
+    align-self: flex-end;
+    padding-bottom: 2rem;
+
+    &-link {
+      writing-mode: vertical-lr;
+      transform: rotate(-180deg);
+      color: var(--white);
+    }
+  }
+
+  &__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50rem;
+  }
+}
